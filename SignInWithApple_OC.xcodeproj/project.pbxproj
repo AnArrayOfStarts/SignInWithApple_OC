@@ -14,6 +14,8 @@
 		31687FAD238BA79100BBB62A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 31687FAC238BA79100BBB62A /* Assets.xcassets */; };
 		31687FB0238BA79100BBB62A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 31687FAE238BA79100BBB62A /* LaunchScreen.storyboard */; };
 		31687FB3238BA79100BBB62A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 31687FB2238BA79100BBB62A /* main.m */; };
+		31687FBB238BAAD100BBB62A /* LXLMainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 31687FBA238BAAD100BBB62A /* LXLMainViewController.m */; };
+		31687FCB238BCDD300BBB62A /* LXLSecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 31687FCA238BCDD300BBB62A /* LXLSecondViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,6 +31,11 @@
 		31687FAF238BA79100BBB62A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		31687FB1238BA79100BBB62A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		31687FB2238BA79100BBB62A /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		31687FB9238BAAD100BBB62A /* LXLMainViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LXLMainViewController.h; sourceTree = "<group>"; };
+		31687FBA238BAAD100BBB62A /* LXLMainViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LXLMainViewController.m; sourceTree = "<group>"; };
+		31687FBC238BAC7D00BBB62A /* SignInWithApple_OC.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = SignInWithApple_OC.entitlements; sourceTree = "<group>"; };
+		31687FC9238BCDD200BBB62A /* LXLSecondViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LXLSecondViewController.h; sourceTree = "<group>"; };
+		31687FCA238BCDD300BBB62A /* LXLSecondViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LXLSecondViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,10 +68,15 @@
 		31687F9F238BA79000BBB62A /* SignInWithApple_OC */ = {
 			isa = PBXGroup;
 			children = (
+				31687FBC238BAC7D00BBB62A /* SignInWithApple_OC.entitlements */,
 				31687FA0238BA79000BBB62A /* AppDelegate.h */,
 				31687FA1238BA79000BBB62A /* AppDelegate.m */,
 				31687FA3238BA79000BBB62A /* SceneDelegate.h */,
 				31687FA4238BA79000BBB62A /* SceneDelegate.m */,
+				31687FB9238BAAD100BBB62A /* LXLMainViewController.h */,
+				31687FBA238BAAD100BBB62A /* LXLMainViewController.m */,
+				31687FC9238BCDD200BBB62A /* LXLSecondViewController.h */,
+				31687FCA238BCDD300BBB62A /* LXLSecondViewController.m */,
 				31687FA6238BA79000BBB62A /* ViewController.h */,
 				31687FA7238BA79000BBB62A /* ViewController.m */,
 				31687FA9238BA79000BBB62A /* Main.storyboard */,
@@ -148,8 +160,10 @@
 			files = (
 				31687FA8238BA79000BBB62A /* ViewController.m in Sources */,
 				31687FA2238BA79000BBB62A /* AppDelegate.m in Sources */,
+				31687FBB238BAAD100BBB62A /* LXLMainViewController.m in Sources */,
 				31687FB3238BA79100BBB62A /* main.m in Sources */,
 				31687FA5238BA79000BBB62A /* SceneDelegate.m in Sources */,
+				31687FCB238BCDD300BBB62A /* LXLSecondViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -289,6 +303,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = SignInWithApple_OC/SignInWithApple_OC.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 7CCDF6GGY6;
 				INFOPLIST_FILE = SignInWithApple_OC/Info.plist;
@@ -306,6 +321,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = SignInWithApple_OC/SignInWithApple_OC.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 7CCDF6GGY6;
 				INFOPLIST_FILE = SignInWithApple_OC/Info.plist;
