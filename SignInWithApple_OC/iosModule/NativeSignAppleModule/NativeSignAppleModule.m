@@ -135,7 +135,6 @@ RCT_EXPORT_METHOD(signApple:(RCTResponseSenderBlock)callback)
 
 // 告诉代理应该在哪个window 展示内容给用户
 - (ASPresentationAnchor)presentationAnchorForAuthorizationController:(ASAuthorizationController *)controller API_AVAILABLE(ios(13.0)){
-  AppDelegate *appdelegate = [AppDelegate new];
     // 返回window
     return (UIWindow *)self;
 }
